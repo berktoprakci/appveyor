@@ -1,9 +1,10 @@
 version: 1.0.{build}
 branches:
-    - master
+    only:
+        - master
 
 image: Visual Studio 2019
 before_build:
     -ps: nuget restore .\Combinatorics.sln
 
-build: .\Combinatorics.sln
+build: .\Combinatorics.sln  
