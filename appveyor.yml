@@ -3,6 +3,6 @@ branches:
     only:
         - master
 before_build:
-    -ps: nuget restore .\Combinatorics.sln
+    - ps: nuget restore .\Combinatorics.sln
 
 build: .\Combinatorics.sln  
